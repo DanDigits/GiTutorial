@@ -8,12 +8,12 @@ This tutorial assumes proficiency in terminal/command line, only insofar of the 
 
 ## Directories and Modifications
 After the creation/location of a new directory/folder, initialize the file into git through
-`git init`
+> git init
 while terminal/command line is in the file. 
 
 ### Cloning
 If you wish to begin with already published files, begin by running in terminal
-`git clone <repository url>`
+> git clone <repository url>
 
 This will download the repository to one eponymous file in the current directory you find yourself in, and have 
 it initialized to be modified by git.
@@ -21,19 +21,20 @@ it initialized to be modified by git.
 ### Branching
 After the creation of a local repository, you will find yourself in the 'master' branch of the project, 
 which is similar to a main or official directory. When working, its best not to modify the official directory 
-until changes can be verified/testd, so we "branch off" with a clone of the main directory for whatever purposes needed.
+until changes can be verified/testd, so we "branch off" with a clone of the main directory for whatever purposes 
+needed.
 
 To branch, in the current repository directory, run
-`git branch <new branch name>`
+> git branch <new branch name>
 to create a new branch.
 
 To move between branches, run
-`git checkout <branch name>`
+> git checkout <branch name>
 
 ```
-Note, should you remain in the 'master' branch, any modifications you create will modify the repository everyone sees;
-should your project be small, this is acceptable, but for large projects with numerous contruibutors,
-this is an easy way to disorganize everyone, should a mistake occur. Be Responsible.
+Note, should you remain in the 'master' branch, any modifications you create will modify the repository
+everyone sees; should your project be small, this is acceptable, but for large projects with numerous
+contruibutors, this is an easy way to disorganize everyone, should a mistake occur. Be Responsible.
 ```
 
 #### **Extras**
