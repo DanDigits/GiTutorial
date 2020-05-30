@@ -6,7 +6,6 @@ you have in order to better familiarize yourself with the service.
 This tutorial assumes proficiency in terminal/command line, only insofar of the utilization of command 'cd' and basic knowledge of text editing through terminal using nano/emac/vim/specific respective text editor through command.
 
 
-
 ## Directories and Modifications
 After the creation/location of a new directory/folder, initialize the file into git through
 `git init`
@@ -32,28 +31,29 @@ To move between branches, run
 `git checkout <branch name>`
 
 ```
-Note, should you remain in the 'master' branch, any modifications you create will modify the repository everyone sees; should your project be small, this is acceptable, but for large projects with numerous contruibutors,
+Note, should you remain in the 'master' branch, any modifications you create will modify the repository everyone sees;
+should your project be small, this is acceptable, but for large projects with numerous contruibutors,
 this is an easy way to disorganize everyone, should a mistake occur. Be Responsible.
 ```
 
-#### **Extra**
+#### **Extras**
 This subsection is designed to inform readers of extra useful applications in git, to help their workflow. You should
 return to this section after reading throughout the entire tutorial, as this will confuse you but is also merely additions
 to the lesson, unnecessary for basic use.
 
-#####Gitignore
+####Gitignore
 In your directory, run `touch .gitignore`.
 This command will create a file which should list the names of files, one file name per line, for git to completely ignore. These
 files will not show up in `git status` and will be entirely absent from the development process done in git. The same
 applies for directories, however instead of simply a line containing a file name such as 
 ```
 new.txt
-'''
+```
 you instead type in `/<directory name>`, as so
-'''
+```
 new.txt
 /directory
-'''
+```
 Such a file will have git ignore new.txt and the directory 'directory' for any changes made to them, as well as for
 staging and committing.
 
