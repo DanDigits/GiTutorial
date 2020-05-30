@@ -6,6 +6,7 @@ you have in order to better familiarize yourself with the service.
 This tutorial assumes proficiency in terminal/command line, only insofar of the utilization of command 'cd' and basic knowledge of text editing through terminal using nano/emac/vim/specific respective text editor through command.
 
 
+
 ## Directories and Modifications
 After the creation/location of a new directory/folder, initialize the file into git through
 `git init`
@@ -55,6 +56,7 @@ new.txt
 '''
 Such a file will have git ignore new.txt and the directory 'directory' for any changes made to them, as well as for
 staging and committing.
+
 
 
 ##Utilization
