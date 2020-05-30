@@ -41,8 +41,8 @@ This subsection is designed to inform readers of extra useful applications in gi
 return to this section after reading throughout the entire tutorial, as this will confuse you but is also merely additions
 to the lesson, unnecessary for basic use.
 
-####Gitignore
-In your directory, run `touch .gitignore`.
+##### **Gitignore**
+In your directory, run > `touch .gitignore`.
 This command will create a file which should list the names of files, one file name per line, for git to completely ignore. These
 files will not show up in `git status` and will be entirely absent from the development process done in git. The same
 applies for directories, however instead of simply a line containing a file name such as 
