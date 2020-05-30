@@ -8,13 +8,16 @@ This tutorial assumes proficiency in terminal/command line, only insofar of the 
 
 ## Directories and Modifications
 After the creation/location of a new directory/folder, initialize the file into git through
-> git init
+```ruby
+git init
+```
 while terminal/command line is in the file. 
 
 ### Cloning
 If you wish to begin with already published files, begin by running in terminal
-> git clone <repository url>
-
+```ruby
+git clone <repository url>
+```
 This will download the repository to one eponymous file in the current directory you find yourself in, and have 
 it initialized to be modified by git.
 
@@ -25,17 +28,19 @@ until changes can be verified/testd, so we "branch off" with a clone of the main
 needed.
 
 To branch, in the current repository directory, run
-> git branch <new branch name>
+```ruby
+git branch <new branch name>
+```
 to create a new branch.
 
 To move between branches, run
-> git checkout <branch name>
-
+```ruby
+git checkout <branch name>
 ```
-Note, should you remain in the 'master' branch, any modifications you create will modify the repository
+
+> **Note** should you remain in the 'master' branch, any modifications you create will modify the repository
 everyone sees; should your project be small, this is acceptable, but for large projects with numerous
 contruibutors, this is an easy way to disorganize everyone, should a mistake occur. Be Responsible.
-```
 
 #### **Extras**
 This subsection is designed to inform readers of extra useful applications in git, to help their workflow. You should
@@ -43,7 +48,9 @@ return to this section after reading throughout the entire tutorial, as this wil
 to the lesson, unnecessary for basic use.
 
 ##### **Gitignore**
-In your directory, run > `touch .gitignore`.
+In your directory, run
+> touch .gitignore
+
 This command will create a file which should list the names of files, one file name per line, for git to completely ignore. These
 files will not show up in `git status` and will be entirely absent from the development process done in git. The same
 applies for directories, however instead of simply a line containing a file name such as 
@@ -62,7 +69,8 @@ staging and committing.
 
 ##Utilization
 Begin with 
-`git status`
+> git status
+
 If nothing has changed in your directory, command line will tell you as such. Create a file, run `touch new.txt`.
 This will create a new text file in the directory. run `git status` again.
 
