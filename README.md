@@ -8,14 +8,14 @@ This tutorial assumes proficiency in terminal/command line, only insofar of the 
 
 ## Directories and Modifications
 After the creation/location of a new directory/folder, initialize the file into git through
-```ruby
+```
 git init
 ```
 while terminal/command line is in the file. 
 
 ### Cloning
 If you wish to begin with already published files, begin by running in terminal
-```ruby
+```
 git clone <repository url>
 ```
 This will download the repository to one eponymous file in the current directory you find yourself in, and have 
@@ -28,13 +28,13 @@ until changes can be verified/testd, so we "branch off" with a clone of the main
 needed.
 
 To branch, in the current repository directory, run
-```ruby
+```
 git branch <new branch name>
 ```
 to create a new branch.
 
 To move between branches, run
-```ruby
+```
 git checkout <branch name>
 ```
 
@@ -66,58 +66,73 @@ Such a file will have git ignore new.txt and the directory 'directory' for any c
 staging and committing.
 
 
-
-##Utilization
+## Utilization
 Begin with 
-> git status
-
+```
+git status
+```
 If nothing has changed in your directory, command line will tell you as such. Create a file, run `touch new.txt`.
 This will create a new text file in the directory. run `git status` again.
 
-###Submitting (`add`)
+### Submitting (`add`)
 'new.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
 is accidental or temporary, as if the file is currently being worked on, so it is simply noted through color. If the change
 is purposeful, mark the change by running
-`git add <file name>`
+```
+git add <file name>
+```
 to stage the file, so the change is now accepted. Running `git status`, it should now show up as green.
 
 If you wish to stage all files changed, run
-`git add .`
-
+```
+git add .
+```
 To revert/unaccept staged (added) files, run 
-`git reset HEAD <file name>`
+```
+git reset HEAD <file name>
+```
 
-###Committing
+### Committing
 After files are in the staging area, you may now officially publish them to the branch. This marks the change for 
 anyone else on the project, or the public, to see.
 
 To committ changes, run
-`git commit`
+```
+git commit
+```
 After running this command you should see a prompt. This prompt details the files about to be published, for
 redundancy, and advises you to submit a comment, to inform what has been done so anyone reading can 
 be up to date on the changes.
 
 Should you prefer not to run into this page every time, run
-`git commit -m 'comment'`
+```
+git commit -m 'comment'
+```
 and you will type out your comment in the quotations instead, which will be submitted with your commits after pressing enter.
 
-###Publishing (`push`)
+### Publishing (`push`)
 After any necessary commits have been made to your local directory, you may now publish these commits to an online 
 directory, through the use of git push command.
 
 When pushing, run
-`git push origin <branch name>` to push the commits to the repository hosted online. Respective hosting credentials
+```
+git push origin <branch name>
+``` 
+to push the commits to the repository hosted online. Respective hosting credentials
 will be brought up following the execution of this command.
 
+
+> If you receive an error denoting a missing 'origin', run
 ```
-If you receive an error denoting a missing 'origin', run
-`git remote add origin <repository url>`
+git remote add origin <repository url>
+```
 This specifies the "origin" of the repository/project online for your local git to reference when pushing and pulling
 changes.
-```
 
-###Updating (`pull`)
+### Updating (`pull`)
 If you wish to download updates from your/the published repository, run
-`git pull`
+```
+git pull
+```
 This will download any changes made to the repository to your local directory, and notify you of the changes.
 
