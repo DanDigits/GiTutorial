@@ -65,10 +65,7 @@ new.txt
 Such a file will have git ignore new.txt and the directory 'directory' for any changes made to them, as well as for
 staging and committing.
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 19ff089546073f98abc1bf163f0659e19403f750
 ## Utilization
 Begin with 
 ```
@@ -129,8 +126,8 @@ will be brought up following the execution of this command.
 ```
 git remote add origin <repository url>
 ```
-This specifies the "origin" of the repository/project online for your local git to reference when pushing and pulling
-changes.
+This specifies the "origin" of the repository/project online for your 
+local git to reference when pushing and pulling changes.
 
 ### Updating (`pull`)
 If you wish to download updates from your/the published repository, run
