@@ -123,7 +123,7 @@ to push the commits to the repository hosted online. Respective hosting credenti
 will be brought up following the execution of this command.
 
 
-> If you receive an error denoting a missing 'origin', run
+> **Note** If you receive an error denoting a missing 'origin', run
 `git remote add origin <repository url>`
 This specifies the "origin" of the repository/project online for your 
 local git to reference when pushing and pulling changes.
