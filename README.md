@@ -3,7 +3,10 @@ Hi! This repository is an extremely rudimentary introduction into git to help no
 It's purpose is meant to be more pragmatical than informational, so make sure to read up on commands or questions 
 you have in order to better familiarize yourself with the service.
 
-This tutorial assumes proficiency in terminal/command line, only insofar of the utilization of command 'cd' and basic knowledge of text editing through terminal using nano/emac/vim/specific respective text editor through command.
+To start, the files included in this tutorial are meant to aid in practicing the following commands shown below.
+Modify them as you wish, but utilize them in accordance to how the tutorial teaches for best results.
+
+This tutorial assumes proficiency in terminal/command line, only insofar of the utilization of command 'cd' and basic knowledge of text editing through terminal using nano/emac/vim/specific respective text editor, through command line.
 
 
 ## Directories and Modifications
