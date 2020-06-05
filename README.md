@@ -135,4 +135,3 @@ If you wish to download updates from your/the published repository, run
 git pull
 ```
 This will download any changes made to the repository to your local directory, and notify you of the changes.
-
