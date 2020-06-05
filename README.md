@@ -130,7 +130,8 @@ will be brought up following the execution of this command.
 `git remote add origin <repository url>`
 This specifies the "origin" of the repository/project online for your 
 local git to reference when pushing and pulling changes. If you've already a remote, run
-`git remote set-url origin <repository url>`
+`git remote set-url origin <repository url>`. This will update your remote to the repository
+at hand.
 
 ### Updating (`pull`)
 If you wish to download updates from your/the published repository, run
