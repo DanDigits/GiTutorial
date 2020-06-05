@@ -10,12 +10,6 @@ This tutorial assumes proficiency in terminal/command line, only insofar of the 
 
 
 ## Directories and Modifications
-After the creation/location of a new directory/folder, initialize the file into git through
-```
-git init
-```
-while terminal/command line is in the file. 
-
 ### Cloning
 If you wish to begin with already published files, begin by running in terminal
 ```
@@ -23,6 +17,13 @@ git clone <repository url>
 ```
 This will download the repository to one eponymous file in the current directory you find yourself in, and have 
 it initialized to be modified by git.
+
+#### Initializing
+If not, then after the creation or location of a new directory/folder, initialize said folder into git through
+```
+git init
+```
+while terminal/command line is in the file. 
 
 ### Branching
 After the creation of a local repository, you will find yourself in the 'master' branch of the project, 
