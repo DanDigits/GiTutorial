@@ -49,8 +49,9 @@ to the lesson, unnecessary for basic use.
 
 ##### **Gitignore**
 In your directory, run
-> touch .gitignore
-
+```
+touch .gitignore
+```
 This command will create a file which should list the names of files, one file name per line, for git to completely ignore. These
 files will not show up in `git status` and will be entirely absent from the development process done in git. The same
 applies for directories, however instead of simply a line containing a file name such as 
@@ -123,9 +124,7 @@ will be brought up following the execution of this command.
 
 
 > If you receive an error denoting a missing 'origin', run
-```
-git remote add origin <repository url>
-```
+`git remote add origin <repository url>`
 This specifies the "origin" of the repository/project online for your 
 local git to reference when pushing and pulling changes.
 
