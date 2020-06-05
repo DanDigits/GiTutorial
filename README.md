@@ -65,7 +65,10 @@ new.txt
 Such a file will have git ignore new.txt and the directory 'directory' for any changes made to them, as well as for
 staging and committing.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19ff089546073f98abc1bf163f0659e19403f750
 ## Utilization
 Begin with 
 ```
