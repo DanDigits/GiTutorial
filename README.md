@@ -65,16 +65,14 @@ new.txt
 Such a file will have git ignore new.txt and the directory 'directory' for any changes made to them, as well as for
 staging and committing.
 
-
-
-##Utilization
+## Utilization
 Begin with 
 > git status
 
 If nothing has changed in your directory, command line will tell you as such. Create a file, run `touch new.txt`.
 This will create a new text file in the directory. run `git status` again.
 
-###Submitting (`add`)
+### Submitting (`add`)
 'new.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
 is accidental or temporary, as if the file is currently being worked on, so it is simply noted through color. If the change
 is purposeful, mark the change by running
@@ -87,7 +85,7 @@ If you wish to stage all files changed, run
 To revert/unaccept staged (added) files, run 
 `git reset HEAD <file name>`
 
-###Committing
+### Committing
 After files are in the staging area, you may now officially publish them to the branch. This marks the change for 
 anyone else on the project, or the public, to see.
 
@@ -101,7 +99,7 @@ Should you prefer not to run into this page every time, run
 `git commit -m 'comment'`
 and you will type out your comment in the quotations instead, which will be submitted with your commits after pressing enter.
 
-###Publishing (`push`)
+### Publishing (`push`)
 After any necessary commits have been made to your local directory, you may now publish these commits to an online 
 directory, through the use of git push command.
 
@@ -116,7 +114,7 @@ This specifies the "origin" of the repository/project online for your local git 
 changes.
 ```
 
-###Updating (`pull`)
+### Updating (`pull`)
 If you wish to download updates from your/the published repository, run
 `git pull`
 This will download any changes made to the repository to your local directory, and notify you of the changes.
