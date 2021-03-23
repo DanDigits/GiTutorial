@@ -1,6 +1,6 @@
 # Tutorial
 Hi! This repository is an extremely rudimentary introduction to help novices, such as myself, learn and become familiarized with git. 
-Its purpose is meant to be more practical than informational, so make sure to read up on any commands or questions you may find as you go along.
+Its purpose is meant to be more practical than informational, so one can learn more through use rather than reading/instruction.
 
 To start, the files included in this tutorial are meant to help practice the given commands shown below, but are in no way necessary. They're empty anyhow.
 
