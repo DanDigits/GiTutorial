@@ -10,7 +10,7 @@ Table of Contents:
  - [Cloning](#cloning)
  - [Initializing](#initializing)
  - [Branching](#branching)
- - [Submitting](#submitting())
+ - [Staging](#staging('add'))
  - [Committing](#committing)
  - [Publishing](#publishing)
  - [Updating](#updating)
@@ -64,7 +64,7 @@ git status
 If nothing has changed in your directory, commandline will tell you as such. Create a file: `Echo Hello World > "File.txt"`.
 This will create the new text file File.txt, in your respective filesystem directory. run `git status` again.
 
-### **Submitting (`add`)**
+### **Staging (`add`)**
 'File.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
 is accidental or temporary, such as if the file is currently being worked on, so it is simply noted through color. If the change
 is purposeful, mark the change by running
