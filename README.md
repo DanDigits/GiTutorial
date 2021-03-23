@@ -6,7 +6,15 @@ To start, the files included in this tutorial are meant to help practice the giv
 
 This tutorial assumes proficiency with commandline, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor.
 
-[Further Reading](#further-reading)
+Table of Contents:
+ - [Cloning](#cloning)
+ - [Initializing](#initializing)
+ - [Branching](#branching)
+ - [Submitting](#submitting)
+ - [Committing](#committing)
+ - [Publishing](#publishing)
+ - [Updating](#updating)
+ - [Further Reading](#further-reading)
 
 
 ## Directories and Modifications
