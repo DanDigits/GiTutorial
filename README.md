@@ -1,6 +1,6 @@
 # Tutorial
-Hi! This repository is an extremely rudimentary introduction into git to help novices, such as myself, learn and become familiarized with its use. 
-Its purpose is meant to be more practical than informational, so make sure to read up on commands or questions you may have as you go along.
+Hi! This repository is an extremely rudimentary introduction to help novices, such as myself, learn and become familiarized with git. 
+Its purpose is meant to be more practical than informational, so make sure to read up on any commands or questions you may find as you go along.
 
 To start, the files included in this tutorial are meant to help practice the given commands shown below, but are in no way necessary. They're empty anyhow.
 
@@ -8,7 +8,7 @@ This tutorial assumes proficiency with commandline, only insofar of the utilizat
 
 
 ## Directories and Modifications
-### Cloning
+### **Cloning**
 If you wish to begin with already published/public files, begin by running in commandline
 ```
 git clone <repository url>
@@ -16,14 +16,14 @@ git clone <repository url>
 This will download the repository to one eponymous file in the current directory you find yourself in, and have 
 it initialized to be modified by git.
 
-#### Initializing
-If not, then after the creation or location of a new directory/folder, initialize said folder into git through
+##### Initializing
+If not, then after the creation or localization of the respective folder you wish to initialize into git, do so using
 ```
 git init
 ```
-while inside the respective file in commandline. 
+while inside the folder. 
 
-### Branching
+### **Branching**
 After the creation of a local repository, you will find yourself in the 'master' branch of the project, 
 which is similar to a main or official directory. When working, its best not to modify the official directory 
 until changes can be verified/tested, so we "branch off" with a clone of the main directory for whatever purposes 
@@ -54,7 +54,7 @@ git status
 If nothing has changed in your directory, commandline will tell you as such. Create a file: `Echo Hello World > "File.txt"`.
 This will create the new text file File.txt, in your respective filesystem directory. run `git status` again.
 
-### Submitting (`add`)
+### **Submitting (`add`)**
 'File.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
 is accidental or temporary, such as if the file is currently being worked on, so it is simply noted through color. If the change
 is purposeful, mark the change by running
@@ -72,11 +72,11 @@ To revert/unaccept staged (added) files, run
 git reset HEAD <file name>
 ```
 
-### Committing
-After files are in the staging area, you may now officially publish them to the branch. This marks the change for 
-anyone else on the project, or the public (depending on your git installation), to see.
+### **Committing**
+After files are in the staging area, you may now officially publish them to the repository, in this case, the branch we created earlier.
+This marks the change for anyone else on the project, or the public (depending on your git installation), to see.
 
-To committ changes, run
+To commit changes, run
 ```
 git commit
 ```
@@ -85,15 +85,14 @@ redundancy, and advises you to submit a comment, to inform what has been done so
 be up to date on the changes. Type out your explanation, and hit enter.
 
 ### Publishing (`push`)
-After any necessary commits have been made to your local repository, you may now publish these commits to an online 
-repository, through the use of git push command.
+After any necessary commits have been made to your local repository, you may now publish the updated commits/repository to an online 
+service, through the use of git push command. This will update the online service hosting your repository, with your new changes.
 
-When pushing, run
+To push, run
 ```
 git push origin <branch name>
 ``` 
-to push the commits to the repository hosted online. Respective hosting credentials
-will be brought up following the execution of this command.
+Respective hosting credentials will be brought up following the execution of this command.
 
 
 > **Note** If you receive an error denoting a missing 'origin', run
@@ -103,24 +102,24 @@ local git to reference when pushing and pulling changes. If you've already a rem
 `git remote set-url origin <repository url>`. This will update your remote to the repository
 at hand.
 
-### Updating (`pull`)
+### **Updating (`pull`)**
 If you wish to download updates from a published repository (already established on your local machine), run
 ```
 git pull
 ```
 This will download any changes made to the repository to your local directory, and notify you of the changes.
 
-# **Extras**
-This subsection is designed to inform readers of extra useful applications in git, to help their workflow. Currently a work in progress.
+# Further Reading
+This subsection is designed to inform readers of extra useful applications in git that i've found beneficial to my workflow. You'll of course, find more than i could list here by referencing the manual, here: https://git-scm.com/docs.
 
-##### **Gitignore**
+### **Gitignore**
 In your directory, run
 ```
 touch .gitignore
 ```
-This command will create a file which should list the names of files, one file name per line, for git to completely ignore. These
-files will not show up in `git status` and will be entirely absent from the development process done in git. The same
-applies for directories, however instead of simply a line containing a file name such as 
+This command will create a file which, when listing the names of files, one file name per line, tells git to ignore them when committing and staging. 
+These files will not show up in `git status` and will be entirely absent from the development process done in git. 
+The same applies for directories, however instead of simply a line containing a file name such as
 ```
 File.txt
 ```
@@ -129,12 +128,14 @@ you instead type in `/<directory name>`, as so
 File.txt
 /directory
 ```
-Such a file will have git ignore File.txt and the directory 'directory' for any changes made to them, as well as for
+Such a file will have git ignore File.txt and the directory/folder 'directory' for any changes made to them, as well as for
 staging and committing.
 
-##### **Comments**
-Should you prefer not to run into the page which shows changes, and asks for a comment when pushing comments to a repository, run
+### **Comments**
+Should you prefer not to run into the 'page' which shows changes, and asks for a comment when pushing comments to a repository, run
 ```
 git commit -m 'comment'
 ```
-and you will be able to type out your comment in the quotations instead. Note however, this wont explicitly show the files that are being committed.
+and you will be able to type out your comment in the quotations instead. Note however, this wont explicitly show the files that are being committed, so be careful.
+
+###
