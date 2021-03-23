@@ -6,7 +6,7 @@ To start, the files included in this tutorial are meant to help practice the giv
 
 This tutorial assumes proficiency with commandline, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor.
 
-# further-reading
+[# Further Reading](# further-reading)
 
 
 ## Directories and Modifications
