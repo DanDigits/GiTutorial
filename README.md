@@ -21,7 +21,7 @@ If not, then after the creation or location of a new directory/folder, initializ
 ```
 git init
 ```
-while inside the respective file. 
+while inside the respective file in commandline. 
 
 ### Branching
 After the creation of a local repository, you will find yourself in the 'master' branch of the project, 
@@ -43,7 +43,7 @@ git checkout <branch name>
 > **Note** Default branch is the 'master' branch. Any modifications you create will modify the files in this repository
 until you move branches. Note that commandline filesystem is NOT linked or in any way respective to git filesystem; e.g.
 It is possible to be in a different filesystem directory, and submit work to an entirely SEPARATE repository. Make sure to
-change branches accordingly. Keep this in mind as you read the following instructions.
+change branches accordingly.
 
 
 ## Utilization
@@ -51,11 +51,11 @@ Begin with
 ```
 git status
 ```
-If nothing has changed in your directory, command line will tell you as such. Create a file: `Echo Hello World > "File.txt"`.
-This will create the new text file File.txt, in your respective OS filesystem directory. run `git status` again.
+If nothing has changed in your directory, commandline will tell you as such. Create a file: `Echo Hello World > "File.txt"`.
+This will create the new text file File.txt, in your respective filesystem directory. run `git status` again.
 
 ### Submitting (`add`)
-'<File.txt>' is currently denoted by red to note that it has been changed. Git however, does not know if this change
+'File.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
 is accidental or temporary, such as if the file is currently being worked on, so it is simply noted through color. If the change
 is purposeful, mark the change by running
 ```
