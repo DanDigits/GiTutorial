@@ -110,7 +110,7 @@ git pull
 This will download any changes made to the repository to your local directory, and notify you of the changes.
 
 # Further Reading
-This subsection is designed to inform readers of extra useful applications in git that i've found beneficial to my workflow. You'll of course, find more than i could list here by referencing the manual, here: https://git-scm.com/docs.
+This subsection is designed to inform readers of useful applications in git that I've found beneficial to my workflow. You'll of course, find more than I could list by referencing the manual, found here: https://git-scm.com/docs.
 
 ### **Gitignore**
 In your directory, run
