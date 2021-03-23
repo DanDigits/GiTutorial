@@ -10,7 +10,7 @@ Table of Contents:
  - [Cloning](#cloning)
  - [Initializing](#initializing)
  - [Branching](#branching)
- - [Submitting](#submitting)
+ - [Submitting](#submitting())
  - [Committing](#committing)
  - [Publishing](#publishing)
  - [Updating](#updating)
