@@ -6,11 +6,11 @@ To start, the files included in this tutorial are meant to help practice the giv
 
 This tutorial assumes proficiency with commandline, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor.
 
-Table of Contents:
+## Table of Contents:
  - [Cloning](#cloning)
  - [Initializing](#initializing)
  - [Branching](#branching)
- - [Staging](#staging('add'))
+ - [Staging](#staging)
  - [Committing](#committing)
  - [Publishing](#publishing)
  - [Updating](#updating)
@@ -64,7 +64,7 @@ git status
 If nothing has changed in your directory, commandline will tell you as such. Create a file: `Echo Hello World > "File.txt"`.
 This will create the new text file File.txt, in your respective filesystem directory. run `git status` again.
 
-### **Staging (`add`)**
+### **Staging**
 'File.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
 is accidental or temporary, such as if the file is currently being worked on, so it is simply noted through color. If the change
 is purposeful, mark the change by running
@@ -94,7 +94,7 @@ After running this command you should see a prompt. This prompt details the file
 redundancy, and advises you to submit a comment, to inform what has been done so anyone reading can 
 be up to date on the changes. Type out your explanation, and hit enter.
 
-### Publishing (`push`)
+### **Publishing**
 After any necessary commits have been made to your local repository, you may now publish the updated commits/repository to an online 
 service, through the use of git push command. This will update the online service hosting your repository, with your new changes.
 
@@ -112,7 +112,7 @@ local git to reference when pushing and pulling changes. If you've already a rem
 `git remote set-url origin <repository url>`. This will update your remote to the repository
 at hand.
 
-### **Updating (`pull`)**
+### **Updating**
 If you wish to download updates from a published repository (already established on your local machine), run
 ```
 git pull
