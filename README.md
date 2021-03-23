@@ -1,17 +1,16 @@
 # Tutorial
-Hi! This repository is an extremely rudimentary introduction into git to help novices, such as myself, begin utilizing git. 
-It's purpose is meant to be more pragmatical than informational, so make sure to read up through other sources on commands 
-or questions you have in order to better familiarize yourself with the service.
+Hi! This repository is an extremely rudimentary introduction into git to help novices, such as myself, learn and become familiarized with its use. 
+Its purpose is meant to be more practical than informational, so make sure to read up on commands or questions you may have as you go along.
 
-To start, the files included in this tutorial are meant to aid in practicing the following commands shown below.
-Modify them as you wish, but utilize them in accordance to how the tutorial teaches for best results.
+To start, the files included in this tutorial are meant to help practice the given commands shown below.
+Modify them as you wish, but practice them as shown initially for best results.
 
-This tutorial assumes proficiency in terminal/command line, only insofar of the utilization of command 'cd' and basic knowledge of text editing through terminal using nano/emac/vim/specific respective text editor, through command line.
+This tutorial assumes proficiency with command line, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor.
 
 
 ## Directories and Modifications
 ### Cloning
-If you wish to begin with already published files, begin by running in terminal
+If you wish to begin with already published/public files, begin by running in commandline
 ```
 git clone <repository url>
 ```
@@ -23,15 +22,15 @@ If not, then after the creation or location of a new directory/folder, initializ
 ```
 git init
 ```
-while terminal/command line is in the file. 
+while inside the respective file. 
 
 ### Branching
 After the creation of a local repository, you will find yourself in the 'master' branch of the project, 
 which is similar to a main or official directory. When working, its best not to modify the official directory 
-until changes can be verified/testd, so we "branch off" with a clone of the main directory for whatever purposes 
+until changes can be verified/tested, so we "branch off" with a clone of the main directory for whatever purposes 
 needed.
 
-To branch, in the current repository directory, run
+To branch, while in the current repository directory, run
 ```
 git branch <new branch name>
 ```
@@ -44,7 +43,7 @@ git checkout <branch name>
 
 > **Note** should you remain in the 'master' branch, any modifications you create will modify the repository
 everyone sees; should your project be small, this is acceptable, but for large projects with numerous
-contruibutors, this is an easy way to disorganize everyone, should a mistake occur. Be Responsible.
+contributors, this is an easy way to disorganize everyone, should a mistake occur.
 
 #### **Extras**
 This subsection is designed to inform readers of extra useful applications in git, to help their workflow. You should
@@ -81,7 +80,7 @@ This will create a new text file in the directory. run `git status` again.
 
 ### Submitting (`add`)
 'new.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
-is accidental or temporary, as if the file is currently being worked on, so it is simply noted through color. If the change
+is accidental or temporary, such as if the file is currently being worked on, so it is simply noted through color. If the change
 is purposeful, mark the change by running
 ```
 git add <file name>
