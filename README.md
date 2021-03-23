@@ -2,9 +2,9 @@
 Hi! This repository is an extremely rudimentary introduction into git to help novices, such as myself, learn and become familiarized with its use. 
 Its purpose is meant to be more practical than informational, so make sure to read up on commands or questions you may have as you go along.
 
-To start, the files included in this tutorial are meant to help practice the given commands shown below, but are in no way neessary. They're empty anyhow.
+To start, the files included in this tutorial are meant to help practice the given commands shown below, but are in no way necessary. They're empty anyhow.
 
-This tutorial assumes proficiency with command line, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor.
+This tutorial assumes proficiency with commandline, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor.
 
 
 ## Directories and Modifications
@@ -40,33 +40,10 @@ To move between branches, run
 git checkout <branch name>
 ```
 
-> **Note** should you remain in the 'master' branch, any modifications you create will modify the repository
-everyone sees; should your project be small, this is acceptable, but for large projects with numerous
-contributors, this is an easy way to disorganize everyone, should a mistake occur.
-
-#### **Extras**
-This subsection is designed to inform readers of extra useful applications in git, to help their workflow. You should
-return to this section after reading throughout the entire tutorial, as this will confuse you but is also merely additions
-to the lesson, unnecessary for basic use.
-
-##### **Gitignore**
-In your directory, run
-```
-touch .gitignore
-```
-This command will create a file which should list the names of files, one file name per line, for git to completely ignore. These
-files will not show up in `git status` and will be entirely absent from the development process done in git. The same
-applies for directories, however instead of simply a line containing a file name such as 
-```
-new.txt
-```
-you instead type in `/<directory name>`, as so
-```
-new.txt
-/directory
-```
-Such a file will have git ignore new.txt and the directory 'directory' for any changes made to them, as well as for
-staging and committing.
+> **Note** Default branch is the 'master' branch. Any modifications you create will modify the files in this repository
+until you move branches. Note that commandline filesystem is NOT linked or in any way respective to git filesystem; e.g.
+It is possible to be in a different filesystem directory, and submit work to an entirely SEPARATE repository. Make sure to
+change branches accordingly. Keep this in mind as you read the following instructions.
 
 
 ## Utilization
@@ -74,11 +51,11 @@ Begin with
 ```
 git status
 ```
-If nothing has changed in your directory, command line will tell you as such. Create a file, run `touch new.txt`.
-This will create a new text file in the directory. run `git status` again.
+If nothing has changed in your directory, command line will tell you as such. Create a file: `Echo Hello World > "File.txt"`.
+This will create the new text file File.txt, in your respective OS filesystem directory. run `git status` again.
 
 ### Submitting (`add`)
-'new.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
+'<File.txt>' is currently denoted by red to note that it has been changed. Git however, does not know if this change
 is accidental or temporary, such as if the file is currently being worked on, so it is simply noted through color. If the change
 is purposeful, mark the change by running
 ```
@@ -97,7 +74,7 @@ git reset HEAD <file name>
 
 ### Committing
 After files are in the staging area, you may now officially publish them to the branch. This marks the change for 
-anyone else on the project, or the public, to see.
+anyone else on the project, or the public (depending on your git installation), to see.
 
 To committ changes, run
 ```
@@ -105,17 +82,11 @@ git commit
 ```
 After running this command you should see a prompt. This prompt details the files about to be published, for
 redundancy, and advises you to submit a comment, to inform what has been done so anyone reading can 
-be up to date on the changes.
-
-Should you prefer not to run into this page every time, run
-```
-git commit -m 'comment'
-```
-and you will type out your comment in the quotations instead, which will be submitted with your commits after pressing enter.
+be up to date on the changes. Type out your explanation, and hit enter.
 
 ### Publishing (`push`)
-After any necessary commits have been made to your local directory, you may now publish these commits to an online 
-directory, through the use of git push command.
+After any necessary commits have been made to your local repository, you may now publish these commits to an online 
+repository, through the use of git push command.
 
 When pushing, run
 ```
@@ -133,8 +104,37 @@ local git to reference when pushing and pulling changes. If you've already a rem
 at hand.
 
 ### Updating (`pull`)
-If you wish to download updates from your/the published repository, run
+If you wish to download updates from a published repository (already established on your local machine), run
 ```
 git pull
 ```
 This will download any changes made to the repository to your local directory, and notify you of the changes.
+
+# **Extras**
+This subsection is designed to inform readers of extra useful applications in git, to help their workflow. Currently a work in progress.
+
+##### **Gitignore**
+In your directory, run
+```
+touch .gitignore
+```
+This command will create a file which should list the names of files, one file name per line, for git to completely ignore. These
+files will not show up in `git status` and will be entirely absent from the development process done in git. The same
+applies for directories, however instead of simply a line containing a file name such as 
+```
+File.txt
+```
+you instead type in `/<directory name>`, as so
+```
+File.txt
+/directory
+```
+Such a file will have git ignore File.txt and the directory 'directory' for any changes made to them, as well as for
+staging and committing.
+
+##### **Comments**
+Should you prefer not to run into the page which shows changes, and asks for a comment when pushing comments to a repository, run
+```
+git commit -m 'comment'
+```
+and you will be able to type out your comment in the quotations instead. Note however, this wont explicitly show the files that are being committed.
