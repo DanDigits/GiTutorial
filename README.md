@@ -16,7 +16,7 @@ git clone <repository url>
 This will download the repository to one eponymous file in the current directory you find yourself in, and have 
 it initialized to be modified by git.
 
-##### Initializing
+### **Initializing**
 If not, then after the creation or localization of the respective folder you wish to initialize into git, do so using
 ```
 git init
