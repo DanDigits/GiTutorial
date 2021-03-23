@@ -136,6 +136,5 @@ Should you prefer not to run into the 'page' which shows changes, and asks for a
 ```
 git commit -m 'comment'
 ```
-and you will be able to type out your comment in the quotations instead. Note however, this wont explicitly show the files that are being committed, so be careful.
-
-###
+and you will be able to type out your comment in the quotations instead.
+> **Note** This option however, wont explicitly show the files that are being committed, so be careful.
