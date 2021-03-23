@@ -128,7 +128,7 @@ you instead type in `/<directory name>`, as so
 File.txt
 /directory
 ```
-Such a file will have git ignore File.txt and the directory/folder 'directory' for any changes made to them, as well as for
+Such a file will have git ignore File.txt and the directory or folder (including subcontents) named 'directory' for any changes made to them, as well as for
 staging and committing.
 
 ### **Comments**
