@@ -18,7 +18,6 @@ This tutorial assumes proficiency with commandline, only insofar of the utilizat
 
 <br />
 <br />
-<br />
 
 ## Directories and Modifications
 ### **Cloning**
