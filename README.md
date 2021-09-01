@@ -64,6 +64,7 @@ until you move branches. Note that commandline filesystem is NOT linked or in an
 It is possible to be in a different filesystem directory, and submit work to an entirely SEPARATE repository. Make sure to
 change branches accordingly.
 
+$~~~$
 
 ## Utilization
 Begin with 
@@ -113,7 +114,6 @@ git push origin <branch name>
 ``` 
 Respective hosting credentials will be brought up following the execution of this command.
 
-
 > **Note** If you receive an error denoting a missing 'origin', run
 `git remote add origin <repository url>`
 This specifies the "origin" of the repository/project online for your 
@@ -127,6 +127,20 @@ If you wish to download updates from a published repository (already established
 git pull
 ```
 This will download any changes made to the repository to your local directory, and notify you of the changes.
+
+After a branch is finalized, if you have access to the master branch, to merge, switch to the master branch, and WHEN READY, run
+```
+git merge <branch name>
+```
+when you are ready to push the updates to a public repository such as to update Github, run
+```
+git push origin master
+```
+to update the master branch. You may now delete the vestigial branch on the local repository: to do so on the public repository, run
+```
+git push origin --delete <branch name>
+```
+$~~~~$
 
 # Further Reading
 This subsection is designed to inform readers of useful applications in git that I've found beneficial to my workflow. You'll of course, find more than I could list by referencing the manual, found here: https://git-scm.com/docs.
