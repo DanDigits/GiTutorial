@@ -19,6 +19,7 @@ This tutorial assumes proficiency with commandline, only insofar of the utilizat
 <br />
 <br />
 <br />
+
 ## Directories and Modifications
 ### **Cloning**
 If you wish to begin with already published/public files, begin by running in commandline
@@ -65,6 +66,7 @@ git branch -d <branch name>
 until you move branches. Note that commandline filesystem is NOT linked or in any way respective to git filesystem; e.g.
 It is possible to be in a different filesystem directory, and submit work to an entirely SEPARATE repository. Make sure to
 change branches accordingly.
+
 <br />
 <br />
 
@@ -142,6 +144,7 @@ to update the master branch. You may now delete the vestigial branch on the loca
 ```
 git push origin --delete <branch name>
 ```
+
 <br />
 <br />
 <br />
