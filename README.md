@@ -16,7 +16,9 @@ This tutorial assumes proficiency with commandline, only insofar of the utilizat
  - [Updating](#updating)
  - [Further Reading](#further-reading)
 
-
+<br />
+<br />
+<br />
 ## Directories and Modifications
 ### **Cloning**
 If you wish to begin with already published/public files, begin by running in commandline
@@ -65,7 +67,6 @@ It is possible to be in a different filesystem directory, and submit work to an 
 change branches accordingly.
 <br />
 <br />
-$~~~$
 
 ## Utilization
 Begin with 
@@ -141,7 +142,9 @@ to update the master branch. You may now delete the vestigial branch on the loca
 ```
 git push origin --delete <branch name>
 ```
-$~~~~$
+<br />
+<br />
+<br />
 
 # Further Reading
 This subsection is designed to inform readers of useful applications in git that I've found beneficial to my workflow. You'll of course, find more than I could list by referencing the manual, found here: https://git-scm.com/docs.
