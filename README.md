@@ -50,6 +50,15 @@ To move between branches, run
 git checkout <branch name>
 ```
 
+To list all branches, run
+```
+git branch -a
+```
+where green branches are modified, and red branches are remote branches. to delete a branch, run
+```
+git branch -d <branch name>
+```
+
 > **Note** Default branch is the 'master' branch. Any modifications you create will modify the files in this repository
 until you move branches. Note that commandline filesystem is NOT linked or in any way respective to git filesystem; e.g.
 It is possible to be in a different filesystem directory, and submit work to an entirely SEPARATE repository. Make sure to
@@ -83,8 +92,8 @@ git reset HEAD <file name>
 ```
 
 ### **Committing**
-After files are in the staging area, you may now officially publish them to the repository, in this case, the branch we created earlier.
-This marks the change for anyone else on the project, or the public (depending on your git installation), to see.
+After files are in the staging area, you may now officially publish them to the local repository, in this case, the branch we created earlier.
+This marks the change for anyone else on the project, or the public (depending on your git installation, and when pushing), to see.
 
 To commit changes, run
 ```
