@@ -18,7 +18,7 @@ To start, the files included in this tutorial are meant to help practice the giv
 
 This tutorial assumes proficiency with commandline, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor.
 
-Please note git has kind of three "stages" to progressing and recording your changes: local staging, where you essentially denote changes have been made to your files on the local machine for record keeping. Local committing, where changes are sent to the repository for other collaborators to see. Finally theres online repository pushing, where changes to the local repository are published to an onine host, public for anyone on the internet to see (granted the repository isnt made private of course). Recall git files are stored on the respective filesystem directory, so wherever the files are, repository and change information is contained.
+Please note git has kind of three "stages" to progressing and recording your changes: local staging, where you essentially denote changes have been made to files on the local machine for record keeping. Local committing, where changes are sent to the repository for other collaborators to see. Finally online repository pushing, where changes to the local repository are published to an online host, public for anyone on the internet to see (granted the repository isnt made private of course). Recall git files are stored on the respective filesystem directory, so wherever the files are, repository and change information is contained.
 
 <br />
 
