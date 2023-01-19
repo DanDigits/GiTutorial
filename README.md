@@ -1,4 +1,4 @@
-# GiTutorial
+# GiTutorial - Practical Tutorial for Git
 ### Table of Contents
  - [Branching](#branching)
  - [Staging](#staging)
