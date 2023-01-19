@@ -185,5 +185,6 @@ You will be shown the commits and their given comments/documentations, in order 
 ### **Security**
 Add an SSH key to your Github account
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+<br />
 Verify yourself by signing (signature) your commits
 https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
