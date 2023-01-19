@@ -6,7 +6,6 @@
  - [Publishing](#publishing)
  - [Pulling](#pulling)
  - [Further Reading](#further-reading)
-
 <br />
 
 Hi! This repository is an extremely rudimentary introduction to help novices, such as myself, learn and become familiarized with git. 
@@ -145,7 +144,6 @@ to update the master branch. You may now delete the branch on the local reposito
 git push origin --delete <branch name>
 ```
 or keep working in the branch if necessary
-
 <br />
 <br />
 <br />
@@ -183,8 +181,7 @@ git log --oneline
 You will be shown the commits and their given comments/documentations, in order to verify what changes have been made and etc.
 
 ### **Security**
-Add an SSH key to your Github account
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+[Add an SSH key to your Github 
+account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 <br />
-Verify yourself by signing (signature) your commits
-https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+[Verify yourself by signing (signature) your commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
