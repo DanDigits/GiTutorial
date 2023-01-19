@@ -182,3 +182,7 @@ git log --oneline
 ```
 You will be shown the commits and their given comments/documentations, in order to verify what changes have been made and etc.
 
+### **Security**
+Add an SSH key to your Github account
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
