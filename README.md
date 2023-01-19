@@ -1,29 +1,25 @@
-# Tutorial
+# GiTutorial
 ### Table of Contents
- - [Cloning](#cloning)
- - [Initializing](#initializing)
  - [Branching](#branching)
  - [Staging](#staging)
  - [Committing](#committing)
  - [Publishing](#publishing)
- - [Updating](#updating)
+ - [Pulling](#pulling)
  - [Further Reading](#further-reading)
 
 <br />
 
 Hi! This repository is an extremely rudimentary introduction to help novices, such as myself, learn and become familiarized with git. 
-Its purpose is meant to be more practical than informational, so one can learn more through use rather than reading/instruction.
+It's purpose is meant to be more practical than informational, so one can learn more through use/application rather than instruction.
 
 To start, the files included in this tutorial are meant to help practice the given commands shown below, but are in no way necessary. They're empty anyhow.
 
-This tutorial assumes proficiency with commandline, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor.
+This tutorial assumes proficiency with linux commandline, only insofar of the utilization of command 'cd' and basic knowledge of text editing using nano/emac/vim/specific respective text editor. This whole thing in linux windows idk.
 
-Please note git has kind of three "stages" to progressing and recording your changes: local staging, where you essentially denote changes have been made to files on the local machine for record keeping. Local committing, where changes are sent to the repository for other collaborators to see. Finally online repository pushing, where changes to the local repository are published to an online host, public for anyone on the internet to see (granted the repository isnt made private of course). Recall git files are stored on the respective filesystem directory, so wherever the files are, repository and change information is contained.
-
+Please note git has kind of three "stages" to progressing and recording your changes: Staging, where you essentially denote changes have been made to files on the local machine for record keeping. Committing, where changes are sent to the repository for other collaborators to see. Finally online repository pushing, where changes to the local repository are published to an online host, public for anyone on the internet to see (granted the repository isnt made private of course). Recall git files are stored on the respective filesystem directory, so wherever the files are, repository and change information is contained.
 <br />
 
-## Directories and Modifications
-### **Cloning**
+## Beginning
 If you wish to begin with already published/public files, begin by running in commandline
 ```
 git clone <repository url>
@@ -31,16 +27,16 @@ git clone <repository url>
 This will download the repository to one eponymous file in the current directory you find yourself in, and have 
 it initialized to be modified by git.
 
-### **Initializing**
 If not, then after the creation or localization of the respective folder you wish to initialize into git, do so using
 ```
 git init
 ```
 while inside the folder. 
+<br />
 
-### **Branching**
-After the creation of a local repository, you will find yourself in the 'master' branch of the project, 
-which is similar to a main or official directory. When working, its best not to modify the official directory 
+## **Branching**
+After the creation of a local repository, you will find yourself in the 'master' or 'main' branch of the project, 
+which is analogous to an official directory. When working, its best not to modify the official directory 
 until changes can be verified/tested, so we "branch off" with a clone of the main directory for whatever purposes 
 needed.
 
@@ -59,26 +55,31 @@ To list all branches, run
 ```
 git branch -a
 ```
-where green branches are modified, and red branches are remote branches. to delete a branch, run
+where green branches are modified, and red branches are remote branches. To delete a branch, checkout out of the branch, and run
 ```
 git branch -d <branch name>
 ```
 
-> **Note** Default branch is the 'master' branch. Any modifications you create will modify the files in this repository
-until you move branches. Note that commandline filesystem is NOT linked or in any way respective to git filesystem; e.g.
-It is possible to be in a different filesystem directory, and submit work to an entirely SEPARATE repository. Make sure to
-change branches accordingly.
-
+should you have cloned a repository which has its own remote branches, and you want a local branch to update with remote branch contents and changes run
+```
+git fetch origin <remote branch>
+```
+to pull updates from the remote branch, then
+```
+git branch -b <name of a new local branch> origin/<name of remote branch>
+```
+> **Note** Default branch is the 'master' or 'main' branch. Any modifications you create will modify the root repository, so be sure to run git branch -a to see which branch you are on before making changes. Along with this, if you checkout into one of the red remote branches, YOU WILL NOT BE WORKING IN/WITH THE BRANCH, you will just have pulled the most recent commit. This brings its own implications, so read up and work accordingly.
 <br />
-<br />
 
-## Utilization
+## Workflow
 Begin with 
 ```
 git status
 ```
 If nothing has changed in your directory, commandline will tell you as such. Create a file: `Echo Hello World > "File.txt"`.
 This will create the new text file File.txt, in your respective filesystem directory. run `git status` again.
+
+> **Note** Remember pull changes first before beginning your work. You'll see what im talking about below.
 
 ### **Staging**
 'File.txt' is currently denoted by red to note that it has been changed. Git however, does not know if this change
@@ -104,11 +105,8 @@ This marks the change for anyone else on the project, or the public (depending o
 
 To commit changes, run
 ```
-git commit
+git commit -m 'type a comment in here to document what changes youve made, or leave it empty'
 ```
-After running this command you should see a prompt. This prompt details the files about to be published, for
-redundancy, and advises you to submit a comment, to inform what has been done so anyone reading can 
-be up to date on the changes. Type out your explanation, and hit enter.
 
 ### **Publishing**
 After any necessary commits have been made to your local repository, you may now publish the updated commits/repository to an online 
@@ -118,7 +116,7 @@ To push, run
 ```
 git push origin <branch name>
 ``` 
-Respective hosting credentials will be brought up following the execution of this command.
+Respective credentials will be brought up following the execution of this command.
 
 > **Note** If you receive an error denoting a missing 'origin', run
 `git remote add origin <repository url>`
@@ -127,14 +125,14 @@ local git to reference when pushing and pulling changes. If you've already a rem
 `git remote set-url origin <repository url>`. This will update your remote to the repository
 at hand.
 
-### **Updating**
+### **Pulling**
 If you wish to download updates from a published repository (already established on your local machine), run
 ```
 git pull
 ```
 This will download any changes made to the repository to your local directory, and notify you of the changes.
 
-After a branch is finalized, if you have access to the master branch, to merge, switch to the master branch, and WHEN READY, run
+After a branch is finalized, if you have (ACCESS or AUTHORIZATION)!! to the master branch, to merge, switch to the master branch, and WHEN READY, run
 ```
 git merge <branch name>
 ```
@@ -142,17 +140,20 @@ when you are ready to push the updates to a public repository such as to update 
 ```
 git push origin master
 ```
-to update the master branch. You may now delete the vestigial branch on the local repository: to do so on the public repository, run
+to update the master branch. You may now delete the branch on the local repository: to do so on the public repository, run
 ```
 git push origin --delete <branch name>
 ```
+or keep working in the branch if necessary
 
+<br />
+<br />
 <br />
 <br />
 <br />
 
 # Further Reading
-This subsection is designed to inform readers of useful applications in git that I've found beneficial to my workflow. You'll of course, find more than I could list by referencing the manual, found here: https://git-scm.com/docs.
+This subsection is designed to inform readers of useful applications in git that I've found beneficial to my workflow. You'll of course find more than I could list by referencing the manual, found here: https://git-scm.com/docs.
 
 ### **Gitignore**
 In your directory, run
@@ -172,11 +173,12 @@ File.txt
 ```
 Such a file will have git ignore File.txt and the directory or folder (including subcontents) named 'directory' for any changes made to them, as well as for
 staging and committing.
+<br />
 
-### **Comments**
-Should you prefer not to run into the 'page' which shows changes, and asks for a comment when pushing comments to a repository, run
+### **Log**
+When in a branch, if you run
 ```
-git commit -m 'comment'
+git log --oneline
 ```
-and you will be able to type out your comment in the quotations instead.
-> **Note** This option however, wont explicitly show the files that are being committed, so be careful.
+You will be shown the commits and their given comments/documentations, in order to verify what changes have been made and etc.
+
