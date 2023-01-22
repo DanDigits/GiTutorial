@@ -59,13 +59,13 @@ where green branches are modified, and red branches are remote branches. To dele
 git branch -d <branch name>
 ```
 
-should you have cloned a repository which has its own remote branches, and you want a local branch to update with remote branch contents and changes run
+should you have cloned a repository which has its own remote branches, and you want a local branch to update with remote branch contents and changes, run
 ```
 git fetch origin <remote branch>
 ```
 to pull updates from the remote branch, then
 ```
-git branch -u <name of a new local branch> origin/<name of remote branch>
+git branch -u <name of local branch> origin/<name of remote branch>
 ```
 > **Note** Default branch is the 'master' or 'main' branch. Any modifications you create will modify the root repository, so be sure to run git branch -a to see which branch you are on before making changes. Along with this, if you checkout into one of the red remote branches, YOU WILL NOT BE WORKING IN/WITH THE BRANCH, you will just have pulled the most recent commit. This brings its own implications, so read up and work accordingly.
 <br />
@@ -185,6 +185,7 @@ Should you have a branch you need to update with updates from the online reposit
 run
 ```
 git pull origin <main/master>
+```
 
 ### **Security**
 [Add an SSH key to your Github 
