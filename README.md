@@ -153,6 +153,13 @@ or keep working in the branch if necessary
 # Further Reading
 This subsection is designed to inform readers of useful applications in git that I've found beneficial to my workflow. You'll of course find more than I could list by referencing the manual, found here: https://git-scm.com/docs.
 
+### **Restoring from Changes**
+Sometimes you've been working on a file and you've completely blown it up and have decided you'd rather remove all changes and start again from your last commit. Can't ctrl-z far enough? Dont know exactly all that you've changed? run this command!
+```
+git restore <nameofFile>
+```
+git will now remove all the changes since the last commit. Remember not to save "changes" if your editor instances your work. If you dont know what I mean, no biggie, just keep working.
+
 ### **Gitignore**
 In your directory, run
 ```
