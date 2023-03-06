@@ -65,7 +65,7 @@ git checkout --track origin/<name of remote branch>
 ```
 to pull updates from the remote branch, then
 ```
-git branch pull <name of remote branch>
+git pull --all
 ```
 > **Note** Default branch is the 'master' or 'main' branch. Any modifications you create will modify the root repository, so be sure to run git branch -a to see which branch you are on before making changes. Along with this, if you checkout into one of the red remote branches, YOU WILL NOT BE WORKING IN/WITH THE BRANCH, you will just have pulled the most recent commit. This brings its own implications, so read up and work accordingly.
 <br />
